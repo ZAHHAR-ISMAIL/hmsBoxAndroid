@@ -70,9 +70,10 @@ dependencies {
     // ---- ML Kit: Face Detection ----
 
     // Import the base SDK.
-    implementation 'com.huawei.hms:ml-computer-vision-face:3.5.0.302'
+   // implementation 'com.huawei.hms:ml-computer-vision-face:3.5.0.302'
     // Import the facial feature detection model package.
     implementation 'com.huawei.hms:ml-computer-vision-face-feature-model:3.5.0.302'
+    //
 
 
 }
