@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">hmsBoxAndroid</string>
+    <string name="facebook_app_id">1127586361119236</string>
+    <string name="fb_login_protocol_scheme">fb1127586361119236</string>
+    <string name="facebook_client_token">4442ff40e566c8ee06761855975cad5e</string>
+    <string name="hwlocation_requestLocationUpdatesWithCallback">getLocation</string>
+    <string name="hwlocation_removeLocationUpdatesWithCallback">removeLocation</string>
+
+
 </resources>
