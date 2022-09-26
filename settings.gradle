@@ -9,3 +9,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "hmsBoxAndroid"
 include ':app'
+include ':mapkit_module_example'
