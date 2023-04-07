@@ -23,7 +23,7 @@ public class MyHMSBroadcastReceiver extends BroadcastReceiver {
             } else if (status.getStatusCode() == CommonStatusCodes.SUCCESS) {
                 Log.i("SMS_RECIEVED", "YES.... ");
                 if (bundle.containsKey(ReadSmsConstant.EXTRA_SMS_MESSAGE)) {
-                    Toast.makeText(context, bundle.getString(ReadSmsConstant.EXTRA_SMS_MESSAGE), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, bundle.getString(ReadSmsConstant.EXTRA_SMS_MESSAGE), Toast.LENGTH_LONG).show();
                 }
             }
         }

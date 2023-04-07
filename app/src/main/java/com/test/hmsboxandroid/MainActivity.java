@@ -1,12 +1,8 @@
 package com.test.hmsboxandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
-import android.Manifest;
 import android.content.IntentFilter;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -15,7 +11,6 @@ import com.huawei.hmf.tasks.Task;
 import com.huawei.hms.support.sms.ReadSmsManager;
 import com.huawei.hms.support.sms.common.ReadSmsConstant;
 
-import android.telephony.SmsManager;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -42,46 +37,19 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-//        if (ContextCompat.checkSelfPermission(this,
-//                android.Manifest.permission.SEND_SMS)
-//                != PackageManager.PERMISSION_GRANTED) {
-//            if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-//                    android.Manifest.permission.SEND_SMS)) {
-//            } else {
-//                ActivityCompat.requestPermissions(this,
-//                        new String[]{Manifest.permission.SEND_SMS},
-//                        11);
-//            }}
-        //sendSms();
 
         // First, check if the app has permission to send SMS messages
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
-                != PackageManager.PERMISSION_GRANTED) {
-            // Permission not granted, request it
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.SEND_SMS},
-                    11);
-        } else {
-            // Permission granted, send SMS message
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage("+212673119299", null, "[#] Your verification code is 102030 tcHLlT5HJlx", null, null);
-        }
-
-    }
-
-    void sendSms() {
-
-
-
-
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage(
-                    "+212673119299",
-                    null,
-                    "[#] Your verification code is 102030 tcHLlT5HJlx",
-                    null,
-                    null
-            );
+//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
+//                != PackageManager.PERMISSION_GRANTED) {
+//            // Permission not granted, request it
+//            ActivityCompat.requestPermissions(this,
+//                    new String[]{Manifest.permission.SEND_SMS},
+//                    11);
+//        } else {
+//            // Permission granted, send SMS message
+//            SmsManager smsManager = SmsManager.getDefault();
+//            smsManager.sendTextMessage("+212706531149", null, "[#] Your verification code is 102030 tcHLlT5HJlx", null, null);
+//        }
 
     }
 
